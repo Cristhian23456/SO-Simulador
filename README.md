@@ -1,5 +1,31 @@
 # Simulador de planificación de procesos — SO · UTPL
 
+## Versión de la rama `chat-gpt`
+
+La implementación creada en esta conversación está en **[planificador/](planificador/README.md)**.
+Incluye React + Vite + TypeScript strict, motor independiente en `src/core/`,
+interfaz en `src/ui/`, FCFS, SJF y SRTF, reproducción, Gantt y comparación.
+El proyecto original de la raíz se conserva.
+
+```sh
+cd planificador
+npm ci
+npm test
+npm run dev
+```
+
+- [Seis ejercicios resueltos](docs/chat-gpt/ejercicios-resueltos.md).
+- [Cuatro casos límite verificados](docs/chat-gpt/casos-limite.md).
+- [Código completo de cada archivo](docs/chat-gpt/CODIGO-COMPLETO.txt).
+- [Proyecto descargable](docs/chat-gpt/planificador.zip).
+- [Vista del Gantt SJF 3](docs/chat-gpt/vista-sjf3.jpg).
+
+La versión `planificador/` tiene 51 pruebas: 41 generales, 6 ejercicios y 4 casos límite.
+Sus convenciones específicas, incluido el conteo de cambios de contexto, están
+documentadas en su propio README. El resto de este documento describe el proyecto original.
+
+---
+
 Simulador interactivo y comparativo de algoritmos de planificación de CPU.
 **Hito 1:** FIFO (FCFS) y SJF (no expropiativo + variante expropiativa SRTF).
 **Hito 2 (pendiente):** Round Robin con quantum configurable, Prioridades e integración comparativa.
